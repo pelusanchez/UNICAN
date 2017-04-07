@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title>Apunter</title>
+		<style type="text/css">
+			body {
+				background:#EEEEFF;
+				font-family:Arial;
+				font-size:16px;
+			}
+			#header {
+				position:absolute;
+				top:0px;
+				left:0px;
+				right:0px;
+				height:100px;
+				background:#FFFFFF;
+				border-bottom:1px solid #CCCCCC;
+			}
+
+			#header_rightbox {
+				position:absolute;
+				top:5px;
+				right:10px;
+				bottom:5px;
+				width:auto;
+				min-width:100px;
+				color:#101020;
+			}
+			#header_rightbox {
+				text-align:right;
+			}
+			#header_grado, #header_asignaturas, #header_filtrar {
+				padding-top:5px;
+				padding-right:5px;
+				text-align:left;
+				
+			}
+			#header_filtrar {
+				color:#0000FF;
+			}
+
+			#header_closesesion {
+				color:#FF0000;
+			}
+			#header_left {
+				position:absolute;
+				top:5px;
+				left:10px;
+				bottom:5px;
+				width:auto;
+				min-width:100px;
+				color:#101020;
+			}
+			#header_searchbox{
+				display:table-cell;
+				padding-top:20px;
+			}
+			#header_search_text{
+				vertical-align: center;
+				width:200px;
+				height:20px;
+				font-size:16px;
+				color:#BBB;
+				border: 1px solid #AAA;
+			}
+			#header_search_text:hover{
+				border: 1px solid #559;
+			}
+
+			#header_search{
+				color:#00F;
+			}
+			#canvas {
+				position:absolute;
+				top:110px;
+				left:100px;
+				right:100px;
+				bottom:10px;
+				background:#FFFFFF;
+				overflow-y:auto;
+				overflow-x:hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div id="header_rightbox">
+				<div id="header_nombre">Hola $NOMBREUSUARIOCOMPLETO - <span id="header_closesesion">Salir</span></div>
+				<div id="header_grado">Grado: 
+					<select id="grado">
+						<option value="0">Todos</option>
+						<option value="1">Fisica</option>
+						<option value="2">Matematicas</option>
+					</select>
+				</div>
+				<div id="header_asignaturas">Asignatura: 
+					<select id="asignatura">
+						<option value="0">Todas</option>
+						<option value="1">Culos</option>
+						<option value="2">Adre</option>
+					</select>
+				</div>
+				<div id="header_filtrar">Filtrar</div>
+			</div>
+			<div id="header_left">
+				<div id="header_searchbox">
+					<table border="0">
+					<tr><td><input type="text" value="Buscar..." id="header_search_text" /></td>
+						<td><div id="header_search">Buscar</div></td>
+					</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="canvas"></div>
+	</body>
+</html>
